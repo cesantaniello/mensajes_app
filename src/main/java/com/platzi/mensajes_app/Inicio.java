@@ -10,24 +10,25 @@ import java.util.Scanner;
 
 /**
  *
- * @author carlos
+ * @author ohmyfi
  */
 public class Inicio {
-    public static void main(String[] args) {
-        
-        Scanner sc = new Scanner(System.in);
-        
-        int opcion = 0;
-        
-        do{
-            System.out.println("-------------");            
-            System.out.println("Aplicación de mensajes");
-            System.out.println(" 1. Crear mensaje");
-            System.out.println(" 2. Listar mensaje");
-            System.out.println(" 3. Editar mensaje");
-            System.out.println(" 4. Eliminar mensaje");            
-            System.out.println(" 5. Salir");
-            
+    
+    public static void main(String[] args){
+    
+       Scanner sc = new Scanner(System.in);
+       
+       int opcion=0;
+       
+       do{
+            System.out.println("-----------------");
+            System.out.println(" Aplicacion de mensajes");
+            System.out.println(" 1. crear mensaje");
+            System.out.println(" 2. listar mensajes");
+            System.out.println(" 3. editar mensaje");
+            System.out.println(" 4. eliminar mensaje");
+            System.out.println(" 5. salir");
+            //leemos la opcion del usuario
             opcion = sc.nextInt();
             
             switch (opcion){
@@ -35,7 +36,7 @@ public class Inicio {
                     mensajesService.crearMensaje();
                     break;
                 case 2:
-                    mensajesService.listarMensaje();
+                    mensajesService.listarMensajes();
                     break;
                 case 3:
                     mensajesService.borrarMensaje();
@@ -46,8 +47,10 @@ public class Inicio {
                 default:
                     break;
             }
-            
-        }while(opcion != 5);
-
+           
+       }while(opcion != 5);
+        
+       
     }
+    
 }

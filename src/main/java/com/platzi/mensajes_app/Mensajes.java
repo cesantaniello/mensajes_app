@@ -7,7 +7,7 @@ package com.platzi.mensajes_app;
 
 /**
  *
- * @author carlos
+ * @author ohmyfi
  */
 public class Mensajes {
     int id_mensaje;
@@ -15,8 +15,7 @@ public class Mensajes {
     String autor_mensaje;
     String fecha_mensaje;
 
-    public Mensajes(){
-    
+    public Mensajes(){     
     }
 
     public Mensajes(String mensaje, String autor_mensaje, String fecha_mensaje) {
@@ -24,6 +23,8 @@ public class Mensajes {
         this.autor_mensaje = autor_mensaje;
         this.fecha_mensaje = fecha_mensaje;
     }
+    
+
     
     public int getId_mensaje() {
         return id_mensaje;
@@ -56,5 +57,7 @@ public class Mensajes {
     public void setFecha_mensaje(String fecha_mensaje) {
         this.fecha_mensaje = fecha_mensaje;
     }
-
+    
+    
+    
 }
